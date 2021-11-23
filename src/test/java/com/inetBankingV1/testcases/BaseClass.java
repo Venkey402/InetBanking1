@@ -14,8 +14,7 @@ import com.inetBankingV1.utilities.ReadConfig;
 
 public class BaseClass {
 	
-	ReadConfig rc = new ReadConfig();
-	
+	ReadConfig rc = new ReadConfig();	
 	String BaseUrl = rc.getBaseUrl();
 	String Username = rc.getUsername();
 	String Password = rc.getPasword();
