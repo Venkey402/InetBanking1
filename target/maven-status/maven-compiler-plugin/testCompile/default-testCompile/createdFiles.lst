@@ -1,0 +1,4 @@
+com\inetBankingV1\utilities\ReadConfig.class
+com\inetBankingV1\pageObjects\LoginPage.class
+com\inetBankingV1\testcases\TC_LoginTest_001.class
+com\inetBankingV1\testcases\BaseClass.class
