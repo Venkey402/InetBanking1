@@ -24,19 +24,19 @@ public class TC_LoginTest_001 extends BaseClass
 	  lp.clickLogin();		
 	  logger.info("Clicked on the login button successfully...");	
 	  	  
-	  if(driver.getTitle().equals("Log in to the Internet Archive"))
+	  if(driver.getTitle().equals("Log in to the Internet Archiveasdfsdfsdfa"))
 	  {
 		  Assert.assertTrue(true);
-		  logger.info("Page title is correct...");			  
-		  TakesScreenshot tss = ((TakesScreenshot)driver);		  
-		  File src = tss.getScreenshotAs(OutputType.FILE);		  
-		  File dest = new File("C:\\Users\\venkatm\\eclipse-workspace\\inetBankingV1\\Screenshots\\testScreenShot.png");
-		  FileUtils.copyFile(src, dest);
+		  logger.info("Page title is correct...");		
 	  }
 	  else
 	  {
 		  Assert.assertTrue(false);
 		  logger.info("Page title is not correct...");	
+		  TakesScreenshot tss = ((TakesScreenshot)driver);		  
+		  File src = tss.getScreenshotAs(OutputType.FILE);		  
+		  File dest = new File("C:\\Users\\venkatm\\eclipse-workspace\\inetBankingV1\\Screenshots\\Fail.png");
+		  FileUtils.copyFile(src, dest);
 	  }
 	  
   }
